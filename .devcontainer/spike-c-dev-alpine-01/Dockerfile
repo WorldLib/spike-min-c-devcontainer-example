@@ -13,6 +13,7 @@ RUN apk update --no-cache && \
     apk upgrade --no-cache && \
     apk add --no-cache \
         cppcheck \
+        flawfinder \
         gcc \
         git \
         musl-dev \
