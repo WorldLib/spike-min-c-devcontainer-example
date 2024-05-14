@@ -1,0 +1,10 @@
+{
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2, 
+  "c-cpp-flylint.clang.enable": false,
+  "c-cpp-flylint.cppcheck.enable": true,
+  "c-cpp-flylint.cppcheck.verbose": true,
+  "c-cpp-flylint.flawfinder.enable": false,
+  "c-cpp-flylint.flexelint.enable": false,
+  "c-cpp-flylint.lizard.enable": false
+}
