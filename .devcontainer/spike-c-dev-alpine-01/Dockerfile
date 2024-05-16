@@ -15,6 +15,7 @@ RUN apk update --no-cache && \
         cppcheck \
         flawfinder \
         gcc \
+        gdb \
         git \
         musl-dev \
     && addgroup -g ${__group_uid} ${__group_name} \

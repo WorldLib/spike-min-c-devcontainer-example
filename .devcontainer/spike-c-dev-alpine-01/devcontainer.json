@@ -10,17 +10,18 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
   "workspaceFolder": "/workspace",
   "containerUser": "vscode",
+  "runArgs": ["--rm", "--name", "${localEnv:USERNAME}_spike_c_dev_alpine_01"],
   "customizations": {
     "vscode": {
       "extensions": [
         "eamodio.gitlens",
         "mhutchie.git-graph",
         "jbenden.c-cpp-flylint",
+        "ms-vscode.cpptools",
         "oderwat.indent-rainbow",
         "timonwong.shellcheck",
         "yzhang.markdown-all-in-one"
       ]
     }
-    
   }
 }

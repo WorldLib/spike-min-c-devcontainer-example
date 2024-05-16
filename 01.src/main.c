@@ -4,7 +4,7 @@
 int main() {
   // Not allowing a char for \0. The linters should inform you...
   char name[2] = "AA";
-  strncpy(name, "John", 2);
+  strncpy(name, "John", sizeof(name));
   printf("Hello, %s!\n", name);
   return 0;
 }
