@@ -1,0 +1,11 @@
+#ifndef WL_LOCAL_CONSOLE_LOGGING_H_
+#define WL_LOCAL_CONSOLE_LOGGING_H_
+
+#include <stdio.h>
+
+enum { WL_CONSOLE_LOG_TRACE, WL_CONSOLE_LOG_DEBUG, WL_CONSOLE_LOG_INFO, WL_CONSOLE_LOG_WARN, WL_CONSOLE_LOG_ERROR, WL_CONSOLE_LOG_FATAL };
+
+
+void log_console(const char *message, int level);
+
+#endif //WL_LOCAL_CONSOLE_LOGGING_H_

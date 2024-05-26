@@ -1,6 +1,15 @@
 {
   "tasks": [
     {
+      "type": "shell",
+      "label": "Build wl Library",
+      "command": "${workspaceFolder}/02.build/build_libs.sh",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
       "type": "cppbuild",
       "label": "C/C++: gcc build active file",
       "command": "/usr/bin/gcc",
@@ -8,6 +17,8 @@
         "-fdiagnostics-color=always",
         "-g",
         "${file}",
+        "-L${workspaceFolder}/02.build/target/static/",
+        "-lwl",
         "-o",
         "${fileDirname}/../02.build/target/${fileBasenameNoExtension}"
       ],
