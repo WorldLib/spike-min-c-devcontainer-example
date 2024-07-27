@@ -1,5 +1,5 @@
 #!/bin/sh
 
-DST_FILE="${WORKSPACE_HOME}/02.build/target/main"
+rm -rf "${WORKSPACE_HOME}/02.build/target"
 
-rm "${DST_FILE}"*
+cp -r "${WORKSPACE_HOME}/02.build/target_seed" "${WORKSPACE_HOME}/02.build/target" 
